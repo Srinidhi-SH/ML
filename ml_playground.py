@@ -1,6 +1,7 @@
-from bayesian_decision_theory import predict_class
+from parametric_approach import Regressor
 
 if __name__ == '__main__':
-    print(predict_class(100))
-    print(predict_class(200))
-    print(predict_class(300))
+    regressor = Regressor([1,2,3,4,5,6,7,8,9],[1,2,3,4,5,6,7,8,9])
+    print(regressor.predict_y(12))
+    print(regressor.predict_y(230))
+    print(regressor.predict_y(490))

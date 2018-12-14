@@ -9,4 +9,4 @@ class MultiVariate:
         return np.mean(self.data,axis=0)
 
     def get_covariance_matrix(self):
-        return 1
+        return np.cov(self.data)
